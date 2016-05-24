@@ -50,14 +50,15 @@ namespace WinFormApp.SoccerClub.Tests.Unity
             Assert.AreEqual(OriginalQueries.DeleteById, actualQueryObj.DeleteById);
         }
 
+
     }
 
     public static class OriginalQueries
     {
-        public static readonly string Insert = "INSERT INTO players(Id, Name, Age, Position) VALUES(@Id, @Name, @Age, @Position)";
+        public static readonly string Insert = "INSERT INTO players(Name, Age, Position) VALUES(@Name, @Age, @Position)";
         public static readonly string ReadAll = "SELECT * FROM players";
         public static readonly string ReadById = ReadAll + " WHERE Id = @Id";
-        public static readonly string UpdateById = "UPDATE players SET [Id] = @Id, [Name] = @Name, [Age] = @Age, [Position] = @Position " + 
+        public static readonly string UpdateById = "UPDATE players SET [Name] = @Name, [Age] = @Age, [Position] = @Position " + 
             "WHERE ([Id] = @Id)";
         public static readonly string DeleteById = "DELETE FROM players WHERE (Id = @Id)";
 

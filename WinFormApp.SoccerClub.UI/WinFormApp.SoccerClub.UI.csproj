@@ -62,7 +62,6 @@
     <Compile Include="CreatePlayerWin.Designer.cs">
       <DependentUpon>CreatePlayerWin.cs</DependentUpon>
     </Compile>
-    <Compile Include="IEditable.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>

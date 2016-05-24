@@ -34,15 +34,15 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
-            this.tableLayoutCurrentPlayer = new System.Windows.Forms.TableLayoutPanel();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblAge = new System.Windows.Forms.Label();
-            this.lblPosition = new System.Windows.Forms.Label();
-            this.txtBoxName = new System.Windows.Forms.TextBox();
-            this.domainUpDownAge = new System.Windows.Forms.DomainUpDown();
-            this.comboBoxPosition = new System.Windows.Forms.ComboBox();
-            this.lblID = new System.Windows.Forms.Label();
             this.lblCurrentID = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
+            this.comboBoxPosition = new System.Windows.Forms.ComboBox();
+            this.domainUpDownAge = new System.Windows.Forms.DomainUpDown();
+            this.txtBoxName = new System.Windows.Forms.TextBox();
+            this.lblPosition = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.tableLayoutCurrentPlayer = new System.Windows.Forms.TableLayoutPanel();
             this.layerPlayerView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPlayers)).BeginInit();
             this.tableLayoutButtons.SuspendLayout();
@@ -119,6 +119,88 @@
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
             // 
+            // lblCurrentID
+            // 
+            this.lblCurrentID.AutoSize = true;
+            this.lblCurrentID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblCurrentID.Location = new System.Drawing.Point(141, 181);
+            this.lblCurrentID.Name = "lblCurrentID";
+            this.lblCurrentID.Size = new System.Drawing.Size(211, 31);
+            this.lblCurrentID.TabIndex = 7;
+            this.lblCurrentID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblID.Location = new System.Drawing.Point(3, 181);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(132, 31);
+            this.lblID.TabIndex = 6;
+            this.lblID.Text = "ID";
+            this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBoxPosition
+            // 
+            this.comboBoxPosition.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBoxPosition.FormattingEnabled = true;
+            this.comboBoxPosition.Location = new System.Drawing.Point(141, 280);
+            this.comboBoxPosition.Name = "comboBoxPosition";
+            this.comboBoxPosition.Size = new System.Drawing.Size(211, 21);
+            this.comboBoxPosition.TabIndex = 5;
+            // 
+            // domainUpDownAge
+            // 
+            this.domainUpDownAge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.domainUpDownAge.Location = new System.Drawing.Point(141, 252);
+            this.domainUpDownAge.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.domainUpDownAge.Name = "domainUpDownAge";
+            this.domainUpDownAge.Size = new System.Drawing.Size(211, 20);
+            this.domainUpDownAge.TabIndex = 4;
+            // 
+            // txtBoxName
+            // 
+            this.txtBoxName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtBoxName.Location = new System.Drawing.Point(141, 220);
+            this.txtBoxName.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
+            this.txtBoxName.Name = "txtBoxName";
+            this.txtBoxName.Size = new System.Drawing.Size(211, 20);
+            this.txtBoxName.TabIndex = 3;
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPosition.Location = new System.Drawing.Point(3, 277);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(132, 25);
+            this.lblPosition.TabIndex = 2;
+            this.lblPosition.Text = "Position";
+            this.lblPosition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblAge
+            // 
+            this.lblAge.AutoSize = true;
+            this.lblAge.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.lblAge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblAge.Location = new System.Drawing.Point(3, 244);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(132, 33);
+            this.lblAge.TabIndex = 1;
+            this.lblAge.Text = "Age";
+            this.lblAge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblName.Location = new System.Drawing.Point(3, 212);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(132, 32);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name";
+            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // tableLayoutCurrentPlayer
             // 
             this.tableLayoutCurrentPlayer.ColumnCount = 2;
@@ -145,88 +227,6 @@
             this.tableLayoutCurrentPlayer.Size = new System.Drawing.Size(355, 429);
             this.tableLayoutCurrentPlayer.TabIndex = 2;
             // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblName.Location = new System.Drawing.Point(3, 212);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(132, 32);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Name";
-            this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblAge
-            // 
-            this.lblAge.AutoSize = true;
-            this.lblAge.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.lblAge.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblAge.Location = new System.Drawing.Point(3, 244);
-            this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(132, 33);
-            this.lblAge.TabIndex = 1;
-            this.lblAge.Text = "Age";
-            this.lblAge.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblPosition
-            // 
-            this.lblPosition.AutoSize = true;
-            this.lblPosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPosition.Location = new System.Drawing.Point(3, 277);
-            this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(132, 25);
-            this.lblPosition.TabIndex = 2;
-            this.lblPosition.Text = "Position";
-            this.lblPosition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtBoxName
-            // 
-            this.txtBoxName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtBoxName.Location = new System.Drawing.Point(141, 220);
-            this.txtBoxName.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
-            this.txtBoxName.Name = "txtBoxName";
-            this.txtBoxName.Size = new System.Drawing.Size(211, 20);
-            this.txtBoxName.TabIndex = 3;
-            // 
-            // domainUpDownAge
-            // 
-            this.domainUpDownAge.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.domainUpDownAge.Location = new System.Drawing.Point(141, 252);
-            this.domainUpDownAge.Margin = new System.Windows.Forms.Padding(3, 8, 3, 3);
-            this.domainUpDownAge.Name = "domainUpDownAge";
-            this.domainUpDownAge.Size = new System.Drawing.Size(211, 20);
-            this.domainUpDownAge.TabIndex = 4;
-            // 
-            // comboBoxPosition
-            // 
-            this.comboBoxPosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBoxPosition.FormattingEnabled = true;
-            this.comboBoxPosition.Location = new System.Drawing.Point(141, 280);
-            this.comboBoxPosition.Name = "comboBoxPosition";
-            this.comboBoxPosition.Size = new System.Drawing.Size(211, 21);
-            this.comboBoxPosition.TabIndex = 5;
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblID.Location = new System.Drawing.Point(3, 181);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(132, 31);
-            this.lblID.TabIndex = 6;
-            this.lblID.Text = "ID";
-            this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblCurrentID
-            // 
-            this.lblCurrentID.AutoSize = true;
-            this.lblCurrentID.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblCurrentID.Location = new System.Drawing.Point(141, 181);
-            this.lblCurrentID.Name = "lblCurrentID";
-            this.lblCurrentID.Size = new System.Drawing.Size(211, 31);
-            this.lblCurrentID.TabIndex = 7;
-            this.lblCurrentID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // PlayersView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,6 +247,10 @@
 
         private System.Windows.Forms.TableLayoutPanel layerPlayerView;
         private System.Windows.Forms.TableLayoutPanel tableLayoutButtons;
+        protected internal System.Windows.Forms.Button btnUpdate;
+        protected internal System.Windows.Forms.Button btnDelete;
+        protected internal System.Windows.Forms.DataGridView dataGridPlayers;
+        private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.TableLayoutPanel tableLayoutCurrentPlayer;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblAge;
@@ -254,11 +258,7 @@
         protected internal System.Windows.Forms.TextBox txtBoxName;
         protected internal System.Windows.Forms.DomainUpDown domainUpDownAge;
         protected internal System.Windows.Forms.ComboBox comboBoxPosition;
-        protected internal System.Windows.Forms.Button btnUpdate;
-        protected internal System.Windows.Forms.Button btnDelete;
-        protected internal System.Windows.Forms.DataGridView dataGridPlayers;
         protected internal System.Windows.Forms.Label lblID;
         protected internal System.Windows.Forms.Label lblCurrentID;
-        private System.Windows.Forms.Button btnCreate;
     }
 }

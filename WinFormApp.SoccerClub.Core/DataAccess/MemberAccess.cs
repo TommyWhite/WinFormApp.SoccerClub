@@ -14,14 +14,12 @@ namespace WinFormApp.SoccerClub.Core.DataAccess
     /// </summary>
     public class MemberAccess : ConnectionAccess, IDBAccessible
     {
-        private const string ConnectionName = "playersDB";
-
         private readonly QueriesBuilder query;
 
         /// <summary>
         /// Creates instance for interaction with database.
         /// </summary>
-        public MemberAccess() : base(ConnectionName)
+        public MemberAccess() : base("playersDB")
         {
             query = new QueriesBuilder("players", typeof(Player));
         }

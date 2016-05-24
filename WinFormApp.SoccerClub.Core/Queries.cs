@@ -59,8 +59,9 @@ namespace WinFormApp.SoccerClub.Core
         {
             get
             {
-                var insertingFields = TableFields.Remove(0, TableFields.IndexOf(',') + 1);
-                var insertingValues = TableParameters.Remove(0, TableParameters.IndexOf(',') + 1);
+                int offset = 2;
+                var insertingFields = TableFields.Remove(0, TableFields.IndexOf(',') + offset);
+                var insertingValues = TableParameters.Remove(0, TableParameters.IndexOf(',') + offset);
                 return $"INSERT INTO {TableName}({insertingFields}) " +
                     $"VALUES({insertingValues})";
             }

@@ -1,6 +1,5 @@
 ﻿namespace WinFormApp.SoccerClub.Core
 {
-    using System;
     using System.Configuration;
 
     /// <summary>
