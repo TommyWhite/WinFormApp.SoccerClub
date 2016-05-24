@@ -1,5 +1,6 @@
 ﻿namespace WinFormApp.SoccerClub.Core
 {
+    using System;
     using System.Configuration;
 
     /// <summary>
@@ -19,10 +20,8 @@
         /// <param name="connectionStringName">Connection string name.</param>
         protected ConnectionAccess(string connectionStringName)
         {
-            //TODO: Add functionality. 'Resolving connection string from the .config file.'
-            //ConnectionString = ConfigurationManager
-            //    .ConnectionStrings[connectionStringName].ConnectionString;
-            ConnectionString = @"Data Source=(localdb)\v11.0;Initial Catalog=players;Integrated Security = SSPI; Connect Timeout = 10; Trusted_Connection = Yes;";
+            ConnectionString = ConfigurationManager
+                .ConnectionStrings[connectionStringName].ConnectionString;
         }
     }
 }

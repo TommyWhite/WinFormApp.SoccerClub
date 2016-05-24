@@ -27,10 +27,7 @@ namespace WinFormApp.SoccerClub.UI.Presenter
             _view.txtBoxName.Text = player.Name;
             _view.domainUpDownAge.Text = player.Age.ToString();
             _view.comboBoxPosition.Text = player.Position.ToString();
-            //Hello World! It is my first commit to the Git SC...)
         }
-
-        
 
         internal void OpenCreator()
         {
